@@ -61,8 +61,8 @@ iframe {
 
 .fundo2 {
 	position: absolute;
-	bottom: -40%;
-	left: 10%;
+	bottom: -20%;
+	left: 5%;
     z-index: -1;
 }
 
