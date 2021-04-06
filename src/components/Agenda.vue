@@ -9,9 +9,8 @@
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <div>
+            <div class="ball">
                 <img class="bola" src="../assets/bola.png">
-                <p class="in-bola">agenda</p>
             </div>
 
         </div>
@@ -19,8 +18,14 @@
 </template>
 
 <style scoped>
+
+
 h1 {
-    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
 }
 
 p {
@@ -42,14 +47,13 @@ p {
     width: 7vw;
 }
 
-.bola {
-    max-width: 300px;
+.ball {
+    position: relative;
 }
 
-.in-bola {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.bola {
+    max-width: 500px;
 }
+
 
 </style>

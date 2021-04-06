@@ -42,6 +42,7 @@ h1 {
     top: 0;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    -webkit-backface-visibility: hidden;
 }
 
 

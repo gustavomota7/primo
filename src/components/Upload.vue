@@ -1,13 +1,11 @@
 <template>
     <div class="box container-fluid">
-        <h1>Upload</h1>
+        <img class="upload" src="../assets/upload.png">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniampariatur.</p>
         <div class="row">
-            <div class="col"></div>
             <div class="col pilares">7 pilares do festival</div>
-            <div class="col"></div>
         </div>
-        <div class="row">
+        <div class="bulletp">
             <div class="col">
                 <ul>
                     <li>1. Lorem ipsum dolor</li>
@@ -26,17 +24,15 @@
                     <li>9. Lorem ipsum dolor</li>
                 </ul>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
         <div class="bg-color"></div>
     </div>
 </template>
 
 <style scoped>
-h1 {
-    padding: 50px;
-    color: white;
+
+.upload {
+    max-height: 150px;
 }
 
 p {
@@ -44,6 +40,7 @@ p {
     width: 75vw;
     display: inline-block;
     padding: 40px;
+    letter-spacing: 1px;
 }
 
 li {
@@ -51,10 +48,18 @@ li {
     list-style-type: none;
 }
 
+.bulletp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 1200px;
+}
+
+
 .box {
     position: relative;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .col {
@@ -64,14 +69,17 @@ li {
 
 .row {
     padding: 10px;
+    justify-content: center;
 }
 
 .pilares {
     background-image: url("../assets/pilares.png");
+    font-weight: bold;
     background-size: 100% 100%;
     border-radius: 20px;
     font-size: 30px;
     padding: 10px;
+    margin-bottom: 30px;
     max-width: 350px;
     min-width: 190px;
 }
@@ -84,7 +92,26 @@ li {
     height: 100%;
     top: 0;
     z-index: -2;
-    transform: scaleY(1.6);
-    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    transform: scaleY(1.3) skewY(-8deg);
+}
+
+@media (max-width: 800px) {
+    .bulletp {
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 0px;
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bg-color {
+        height: 115%
+    }
+
 }
 </style>
