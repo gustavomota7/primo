@@ -35,6 +35,7 @@
 
 .upload {
     max-height: 150px;
+    max-width: 90vw;
 }
 
 p {
@@ -82,7 +83,8 @@ li {
     font-size: 30px;
     padding: 10px;
     margin-bottom: 30px;
-    max-width: 350px;
+    width: 70vw;
+    max-width: 300px;
     min-width: 190px;
 }
 
@@ -100,6 +102,30 @@ li {
 @media (max-width: 800px) {
     .bulletp {
         flex-direction: column;
+    }
+
+    .col {
+        margin: 0px;
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bg-color {
+        height: 115%
+    }
+
+}
+
+@media (max-width: 550px) {
+    .bulletp {
+        flex-direction: column;
+    }
+
+    p {
+        width: 90vw;
     }
 
     .col {

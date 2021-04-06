@@ -112,6 +112,7 @@ h1 {
 }
 
 .orange {
+    padding-top: 0px; 
     color: #ff5f00;
 }
 
@@ -163,14 +164,14 @@ p {
     padding: 0px;
 }
 
-.foto {
-    flex-grow: 2;
-    align-self: center;
-}
-
 .texto-last {
     align-self: center;
     padding: 0px;
+}
+
+.foto {
+    flex-grow: 2;
+    align-self: center;
 }
 
 .foto-last {
@@ -179,10 +180,18 @@ p {
 
 .imagem {
     max-height: 300px;
+    max-width: 75vw;
     padding-top: 10px;
 
 }
 
+
+@media (max-width: 550px) {
+    p {
+        padding: 0;
+    }
+
+}
 
 @media (max-width: 800px) {
     .depo {

@@ -55,5 +55,15 @@ p {
     max-width: 500px;
 }
 
+@media (max-width: 550px) {
+    p {
+        max-width: 90vw;
+    }
+
+    .bola {
+        max-width: 320px;
+    }
+}
+
 
 </style>
