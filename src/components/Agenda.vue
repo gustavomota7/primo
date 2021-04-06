@@ -63,6 +63,10 @@ p {
     .bola {
         max-width: 320px;
     }
+
+    .ball {
+        padding-bottom: 50px;
+    }
 }
 
 
