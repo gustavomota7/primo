@@ -61,7 +61,11 @@
 .logo {
     position: relative;
     max-height: 150px;
+	max-width: 100%;
     top: 20%;
+	z-index: 2;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 h3 {
@@ -76,6 +80,7 @@ h3 {
 	justify-content: center;
 	align-content: center;
     top: 30%;
+	z-index: 2;
 }
 
 .button {
@@ -84,8 +89,9 @@ h3 {
 
 .form-control {
 	display: inline;
-	width: 50%;
-	min-width: 420px;
+	width: 60vw;
+	min-width: 230px;
+	max-width: 600px;
 }
 
 .estilo {
@@ -99,11 +105,19 @@ h3 {
 }
 
 .aviso {
-	position: relative;
+	position: absolute;
 	color: white;
-	top: 30%;
+	top: 80%;
 	font-size: 1.5rem;
-	padding: 50px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+p {
+	margin: 0px;
 }
 
 .fundo1 {
@@ -148,6 +162,31 @@ h3 {
 
 	.bola {
 		width: 200px;
+	}
+
+	.aviso {
+		font-size: 1rem;
+	}
+}
+
+
+@media (max-width: 550px) {
+	.bola {
+		width: 300px;
+	}
+
+	.fundo2 {
+		display: none;
+	}
+
+	.fundo3 {
+		display: none;
+	}
+}
+
+@media (max-height: 650px) {
+	.aviso {
+		top: 85%;
 	}
 }
 
