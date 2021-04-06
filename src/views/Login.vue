@@ -15,7 +15,7 @@
 			</div>
 
 			<div class="button">
-				<router-link to="/home" tag="button" class="btn btn-primary estilo">Entrar</router-link>
+				<router-link to="/home" tag="button" class="btn btn-primary btn-lg estilo">Entrar</router-link>
 			</div>
         </div>
 		<div class="aviso">
@@ -71,6 +71,7 @@
 h3 {
     color: white;
     font-weight: bold;
+	font-size: 3.5rem;
 }
 
 .textbox {
@@ -107,11 +108,12 @@ h3 {
 .aviso {
 	position: absolute;
 	color: white;
-	top: 80%;
+	bottom: 5%;
 	font-size: 1.5rem;
 	padding: 0px;
 	margin: 0px;
 	z-index: 2;
+	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -144,6 +146,12 @@ p {
 	right: 0;
 }
 
+@media (max-height: 550px) {
+	p {
+		display: none;
+	}
+}
+
 .bola {
 	width: 500px;
 }
@@ -154,7 +162,7 @@ p {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	.logo {
 		max-height: 100px;
 		margin-bottom: 50px;
@@ -165,10 +173,9 @@ p {
 	}
 
 	.aviso {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 }
-
 
 @media (max-width: 550px) {
 	.bola {
@@ -182,12 +189,11 @@ p {
 	.fundo3 {
 		display: none;
 	}
-}
 
-@media (max-height: 650px) {
 	.aviso {
-		top: 85%;
+		font-size: 1rem;
 	}
 }
+
 
 </style>
