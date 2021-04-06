@@ -1,6 +1,8 @@
 <template>
     <div class="box container-fluid">
-        <img class="upload" src="../assets/upload.png">
+        <div>
+            <img class="upload" src="../assets/upload.png">
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniampariatur.</p>
         <div class="row">
             <div class="col pilares">7 pilares do festival</div>
@@ -37,7 +39,7 @@
 
 p {
     color: white;
-    width: 75vw;
+    width: 50vw;
     display: inline-block;
     padding: 40px;
     letter-spacing: 1px;
