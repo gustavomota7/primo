@@ -102,6 +102,7 @@ li {
 @media (max-width: 800px) {
     .bulletp {
         flex-direction: column;
+        padding-bottom: 70px;
     }
 
     .col {

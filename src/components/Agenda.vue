@@ -19,15 +19,6 @@
 
 <style scoped>
 
-
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    text-align: center;
-}
-
 p {
     max-width: 50vw;
     text-align: center;

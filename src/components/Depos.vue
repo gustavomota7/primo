@@ -106,7 +106,6 @@
 
 
 h1 {
-    padding-top: 30px;
     margin: 0;
     font-weight: bold;
 }
